@@ -1,0 +1,36 @@
+.burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60px;
+  width: 80px;
+  margin: 5px;
+  flex-shrink: 0;
+  cursor: pointer;
+
+  .bar {
+    display: flex;
+    width: 40px;
+    height: 5px;
+    background-color: rgb(20, 20, 20);
+    margin: 3px 0;
+    transition: 0.4s;
+  }
+
+  &.active {
+    .bar {
+      width: 30px;
+      border-radius: 20px;
+    }
+    .bar:nth-child(1) {
+      transform: rotateZ(45deg) translate(7.5px, 7.5px);
+    }
+    .bar:nth-child(2) {
+      transform: translateX(0px) rotateZ(45deg);
+    }
+    .bar:nth-child(3) {
+      transform: rotateZ(-45deg) translate(7.5px, -7.5px);
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@use '../../../app/variables.scss';
+
+.textField,
+.numberField,
+.passwordField {
+  width: 200px;
+  height: 50px;
+  padding: 10px 20px;
+  background-color: variables.$backgroundAndLetterWhite;
+  backdrop-filter: blur(10px);
+  color: variables.$backgroundBlack;
+  border: 2px solid variables.$borderGrey;
+  border-radius: 10px;
+
+  &:autofill {
+    background-color: variables.$textGrey;
+    border: 1px solid variables.$textGrey;
+  }
+}
+
+.checkboxField {
+  margin-right: 10px;
+}
+
+.label {
+  margin-bottom: 10px;
+}
+
+.fieldWrapperCol {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.fieldWrapperRow {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.validateMessage {
+  color: variables.$borderRed;
+  font-size: 8px;
+}

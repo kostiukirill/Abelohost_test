@@ -1,0 +1,41 @@
+@use '../../app/variables.scss';
+
+.headerWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: variables.$height-header;
+  background-color: variables.$backgroundAndLetterWhite;
+  border-bottom: 2px solid variables.$borderGrey;
+}
+.topHeader {
+  background-color: variables.$backgroundDark;
+  display: flex;
+  justify-content: space-between;
+  height: calc(variables.$height-header/6.5);
+  padding-inline: variables.$padding-inline-app;
+}
+.mainHeader {
+  display: flex;
+  align-items: center;
+  background-color: variables.$backgroundBlack;
+  border-bottom: 2px solid variables.$borderRed;
+  height: calc(variables.$height-header/2);
+  padding-inline: variables.$padding-inline-app;
+}
+.mainTitle {
+  position: relative;
+  display: flex;
+  align-items: end;
+  color: variables.$backgroundAndLetterWhite;
+  font-size: clamp(1rem, 2vw + 1rem, 4rem);
+  &::after {
+    content: '●';
+    font-size: 20px;
+    color: variables.$borderRed;
+  }
+}
+.bottomHeader {
+  height: calc(variables.$height-header/2.8);
+  padding-inline: variables.$padding-inline-app;
+}

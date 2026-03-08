@@ -1,0 +1,46 @@
+@use '../../../../app/variables.scss';
+
+.itemCardWrapper {
+  min-width: 300px;
+  width: calc(
+    (100vw - variables.$padding-inline-app * 2 - variables.$marginRight * 2) / 3
+  );
+  height: calc(
+    100vh - variables.$height-header - variables.$height-header/6.5 -
+      variables.$mb-p-g20 * 6
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid variables.$borderGrey;
+  margin-bottom: 50px;
+  padding: variables.$mb-p-g20;
+}
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: variables.$mb-p-g20;
+}
+.titleItem {
+  text-align: center;
+  font-size: 16;
+}
+.categoryItem {
+  color: variables.$textGrey;
+  font-weight: 600;
+}
+.priceItem {
+  font-size: 18px;
+  color: variables.$borderRed;
+  font-weight: 700;
+}
+.imageBlock {
+  height: 60%;
+  width: 100%;
+  margin-bottom: variables.$mb-p-g20;
+}
+.image {
+  width: 100%;
+  height: 100%;
+}

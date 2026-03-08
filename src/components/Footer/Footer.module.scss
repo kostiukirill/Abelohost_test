@@ -1,0 +1,10 @@
+@use '../../app/variables.scss';
+
+.topFooter {
+  background-color: variables.$backgroundDark;
+  color: variables.$backgroundAndLetterWhite;
+  display: flex;
+  justify-content: space-between;
+  height: calc(variables.$height-header/6.5);
+  padding-inline: variables.$padding-inline-app;
+}

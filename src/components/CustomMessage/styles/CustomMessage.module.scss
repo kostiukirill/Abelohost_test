@@ -1,0 +1,47 @@
+.modalback {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(103, 115, 142, 0.6);
+  backdrop-filter: blur(5px);
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.messageWindow {
+  position: relative;
+  width: 40vw;
+  height: 30vh;
+  background-color: #0a0a0a;
+  border-radius: 30px;
+  box-shadow: 10px 10px 10px #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.textWrapper {
+  padding: 40px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.message {
+  font-size: 14px;
+  margin-bottom: 70px;
+}
+
+.buttonWrapper {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 20px;
+}

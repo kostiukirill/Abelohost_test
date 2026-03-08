@@ -1,0 +1,9 @@
+@use '../../app/variables.scss';
+
+.appWrapper {
+  width: 100vw;
+  height: calc(100vh - variables.$height-header - variables.$height-header/6.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,30 @@
+@use '../../../../app/variables.scss';
+.login,
+.logout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: variables.$backgroundAndLetterWhite;
+
+  &::before,
+  &::after {
+    display: inline-block;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: '';
+  }
+
+  @media (max-width: 1000px) {
+    font-size: 0;
+  }
+}
+
+.login::before {
+  background-image: url('../../../../assets/PersonFill.svg');
+}
+.logout::after {
+  background-image: url('../../../../assets/Logout.svg');
+}

@@ -1,0 +1,23 @@
+@use '../../app/variables.scss';
+
+.productListWrapper {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  padding-inline: variables.$padding-inline-app;
+  height: 80vh;
+  overflow-y: scroll;
+  padding-block: 30px;
+}
+
+.productsList {
+  display: flex;
+  justify-content: center;
+  gap: variables.$marginRight;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 36px;
+  margin-bottom: variables.$mb-p-g20;
+}

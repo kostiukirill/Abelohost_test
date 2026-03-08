@@ -1,0 +1,22 @@
+@use '../../../app/variables.scss';
+
+.button {
+  min-width: 200px;
+  padding: 10px 20px;
+  background-color: variables.$backgroundDark;
+  backdrop-filter: blur(10px);
+  color: variables.$backgroundAndLetterWhite;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.buttonDisabled {
+  min-width: 200px;
+  padding: 10px 20px;
+  backdrop-filter: blur(10px);
+  color: variables.$backgroundAndLetterWhite;
+  border: none;
+  border-radius: 10px;
+  background-color: variables.$textGrey;
+  cursor: default;
+}

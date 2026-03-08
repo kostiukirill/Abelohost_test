@@ -1,0 +1,47 @@
+@use '../../../../app/variables.scss';
+
+.linkListWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  position: relative;
+}
+.linkList {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  gap: variables.$mb-p-g20;
+
+  @media (max-width: 900px) {
+    position: absolute;
+    visibility: hidden;
+    background-color: variables.$backgroundAndLetterWhite;
+    top: 100%;
+    left: 0;
+    border: 2px solid variables.$borderGrey;
+    flex-direction: column;
+    height: 0; // По умолчанию 0
+    overflow-y: hidden;
+    transition:
+      height 0.3s ease-in-out,
+      padding 0.5s ease-in-out,
+      visibility 0.5s ease-in-out;
+
+    &.open {
+      visibility: visible;
+      padding: 10px;
+      display: flex;
+      height: 280px; // Высота при открытом меню
+      border: 2px solid variables.$borderGrey;
+    }
+  }
+}
+
+.burgerButton {
+  display: block;
+  @media (min-width: 900px) {
+    display: none;
+  }
+}

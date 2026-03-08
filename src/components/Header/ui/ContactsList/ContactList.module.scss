@@ -1,0 +1,10 @@
+@use '../../../../app/variables.scss';
+
+.contactList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: variables.$mb-p-g20;
+  color: variables.$backgroundAndLetterWhite;
+}
