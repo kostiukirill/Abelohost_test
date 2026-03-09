@@ -35,7 +35,7 @@
 
 1. Склонируйте репозиторий:
    ```
-   git clone https://github.com/your-username/repository-name.git
+   git clone https://github.com/kostiukirill/Abelohost_test.git
    ```
 2. Установите необходимые пакеты:
 
